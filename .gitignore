@@ -1,0 +1,32 @@
+# Unity generated
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Visual Studio / VS Code / JetBrains IDEs
+.vs/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+.vsconfig
+
+# OS generated
+.DS_Store
+Thumbs.db
