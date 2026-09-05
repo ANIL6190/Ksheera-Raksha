@@ -1,6 +1,6 @@
 # Ksheera-Raksha: Milk Chilling Can Digital Twin & 3D Thermal Visualization
 
-**Ksheera-Raksha** is an IoT-enabled, low-cost, lightweight milk chilling digital twin developed for small-scale dairy farmers. The project combines a 5-layer lumped-capacitance transient thermal physics simulation (developed in MATLAB) with an interactive 3D real-time visualization in Unity URP.
+**Ksheera-Raksha** is an IoT-enabled, low-cost, lightweight milk chilling digital twin developed for small-scale dairy farmers. The project combines a 5-layer lumped-capacitance transient thermal physics simulation (developed in Python) with an interactive 3D real-time visualization in Unity URP.
 
 ---
 
@@ -17,13 +17,13 @@ $$\text{Ambient Environment } (35\,^\circ\text{C}) \xrightarrow{\quad R_{\text{i
 
 ```mermaid
 graph LR
-    A[MATLAB Physics Model] -->|Simulates Transient Thermal ODE| B[sim_data.csv Telemetry]
+    A[Python Physics Model] -->|Simulates Transient Thermal ODE| B[sim_data.csv Telemetry]
     B -->|StreamingAssets| C[Unity SimDataLoader]
     C --> D[CanVisualizer Shader/Material Lerp]
     C --> E[Telemetry UI Panel & Scrub Bar]
 ```
 
-1. **Physics & Simulation (MATLAB R2026a):** Solves the coupled differential equations governing ambient heat influx ($\dot{Q}_{\text{amb}}$) and latent heat absorption of the PCM jacket ($\dot{Q}_{\text{pcm}}$).
+1. **Physics & Simulation (Python):** Solves the coupled differential equations governing ambient heat influx ($\dot{Q}_{\text{amb}}$) and latent heat absorption of the PCM jacket ($\dot{Q}_{\text{pcm}}$).
 2. **Telemetry Export:** Exports time-series data (`sim_data.csv`) tracking time, conventional milk temperature, and PCM-insulated milk temperature over a 12-hour transport window.
 3. **Unity 3D Digital Twin (Unity 2022+ URP):** Renders a live side-by-side comparison of the Conventional Can vs. Ksheera-Raksha Can with real-time temperature-to-color mapping and interactive playback controls.
 
