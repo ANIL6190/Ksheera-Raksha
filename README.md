@@ -4,6 +4,17 @@
 
 ---
 
+## 🎬 Live 3D Digital Twin Thermal Simulation Demo
+
+<div align="center">
+  <img src="MilkCanTemp.gif" alt="Ksheera-Raksha 3D Thermal Visualization Demo" width="100%" style="border-radius: 8px;" />
+  <p><em>Live 3D Digital Twin Simulation: Conventional Milk Can vs. Ksheera-Raksha PCM Insulated Can</em></p>
+  
+  <video src="MilkCanTemp.mp4" width="100%" controls autoplay loop muted playsinline poster="MilkCanTemp.gif"></video>
+</div>
+
+---
+
 ## 📌 Project Overview & Purpose
 
 In rural dairy supply chains, raw harvested milk rapidly spoils due to high ambient temperatures ($35\,^\circ\text{C}$) during transport. **Ksheera-Raksha** introduces a passive/hybrid chilling can utilizing an integrated Phase Change Material (PCM) thermal storage jacket combined with polyurethane insulation.
